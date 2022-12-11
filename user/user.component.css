@@ -1,0 +1,16 @@
+table,
+th,
+tbody,
+td{
+    border: 2px solid ;
+    text-align: center;
+    margin-left: 300px;
+}
+
+th{
+    background-color: coral;
+}
+
+td{
+    background-color: darkgray;
+}

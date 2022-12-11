@@ -1,0 +1,21 @@
+th,td{
+    border: 2px solid blue;
+    text-align: center;
+}
+table{
+margin-left: 500px;
+
+}
+
+h4{
+    color: blueviolet;
+    text-align: center;
+}
+th{
+    background-color:orange;
+}
+
+td{
+    background-color: skyblue;
+}
+

@@ -1,0 +1,22 @@
+.card{
+    display:inline-block;
+    margin:10px 10px 10px;
+    width:80%;
+    height:20%
+
+    
+}
+
+
+.card-title{
+    color: orangered;
+   
+}
+
+
+
+
+p{
+    background-color: aqua;
+}
+

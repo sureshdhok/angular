@@ -1,0 +1,18 @@
+input:hover{
+    background-color:deepskyblue;
+    color:blue;
+}
+
+.card{
+    background-color:sandybrown;
+    margin-left: 60px;
+    
+}
+
+.btn-add:hover{
+    background-color:crimson;
+}
+
+.ss{
+    background-color: sandybrown;
+}

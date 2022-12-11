@@ -1,0 +1,51 @@
+
+<table>
+<thead>
+    <th>Id</th>       
+    <th>Name</th>
+    <th>User Name</th>
+    <th>Email</th>
+    <th>Website</th>
+</thead>
+<tbody *ngFor="let user of users">
+    <tr>
+        <td>{{user.id}}</td>
+
+        <td>{{user.name}}</td>
+
+        <td>{{user.username}}</td>
+
+        <td>{{user.email}}</td>
+
+        <td>{{user.website}}</td>
+
+        
+    </tr>
+</tbody>
+</table>
+
+<!-- 
+<table>
+    <thead>
+        <th>DateTime</th>
+        <th>Open</th>
+        <th>High</th>
+        <th>Low</th>
+        <th>Close</th>
+        <th>Volume</th>
+    </thead>
+
+    <tbody *ngFor="let user of users">
+   <tr>
+
+     <td>{{user.dateTime}}</td>
+     <td>{{user.open}}</td>
+     <td>{{user.high}}</td>
+     <td>{{user.low}}</td>
+     <td>{{user.close}}</td>
+     <td>{{user.volume}}</td>
+
+   </tr>
+
+    </tbody>
+</table> -->

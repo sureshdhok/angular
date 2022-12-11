@@ -1,0 +1,12 @@
+   
+   <div style="margin-left :80px;">
+   <h4 style="color:red">Login</h4>
+
+<input type="text" placeholder="Enter user name" #username> <br>
+<input type="password" placeholder="Enter password" #pass >
+<div>
+<button  class="btn btn-info mt-2 btn-sm" (click)="login(username.value, pass.value)">Login</button>
+</div>
+<div>{{msg}}</div>
+
+</div>

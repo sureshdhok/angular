@@ -1,0 +1,65 @@
+
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-6 text-left rounded  shadow py-50">
+<form #myForm="ngForm" (ngSubmit)="OnSubmit(myForm)">
+    <div ngModelGroup="userDetail" #userDetail="ngModelGroup">
+
+ <div class="form-group">
+    <label for="username">username</label>
+     <input type="text" class="form-control" id="username" name="username"[(ngModel)]="userName"  
+     placeholder="Enter your first Name" required>
+     <small *ngIf="userName">User name is: {{userName}}</small>
+ </div>
+ <!-- <div class="form-group"> -->
+    <!-- <label for="email">Email</label>
+    <input type="text" class="form-control" id="email" email  #email="ngModel" name="email" ngModel
+    placeholder="Enter email address" required>
+     
+    <small class="text-danger" *ngIf="!email.valid && email.touched">Enter valid email</small>
+ </div> -->
+ <div class="form-group">
+ <label for="email">Email</label>
+ <input type="text" class="form-control" id="email" pattern=".+@codemindtechnology\.com" email #email="ngModel" name="email" ngModel
+ placeholder="enter email address"required>
+ <small class="text-danger" *ngIf="!email.valid && email.touched">please enter valid email</small>
+ </div>
+
+
+
+   <small *ngIf="!userDetail.valid && userDetail.touched">Please enter valid user details</small>
+</div>
+<div class="form-group">
+    <label for="">Select Course</label>
+    <select name="course" id="course" class="form-control" [ngModel]="defaultValue">
+        <option value="Angular">Angular</option>
+        <option value="HTML">HTML</option>
+        <option value="JavaScript">JavaScript</option>
+    </select>
+</div>
+<div class="form-group" *ngFor="let gender of genders">
+    <input type="radio" name="gender" id="{{gender.id}}" value="{{gender.value}}" 
+    [ngModel]="defaultGender" class="custom-control custom-radio">
+    <label for="{{gender.id}}">{{gender.value}}</label>
+</div>
+
+<button type="submit"  (click)="show()"  class="btn btn-danger mt-2" [disabled]="!myForm.valid">Submit</button>
+
+
+
+
+</form>
+</div>
+</div>
+ <div *ngIf="data" class="row justify-content-center mt-2">
+    <div class="col-md-4 rounded shadow py-4">
+    <h2>Form Data</h2>
+     <p>Username : <strong>{{formData.username}}</strong></p>  
+     <p>Email : <strong>{{formData.email}}</strong></p>
+     <p>Course : <strong>{{formData.course}}</strong></p>
+     <p>Gender : <strong>{{formData.gender}}</strong></p>
+
+ </div>  
+</div>  
+
+

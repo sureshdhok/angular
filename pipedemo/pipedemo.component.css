@@ -1,0 +1,20 @@
+table,td,
+       th{
+    border: 2px solid green;
+}
+
+td{
+    background-color: black;
+}
+ 
+input{
+    background-color:darksalmon;
+}
+ 
+th{
+    background-color: darkkhaki;
+}
+
+tbody{
+    color: white;
+}
